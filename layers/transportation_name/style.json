@@ -321,7 +321,7 @@
       "order": 188
     },
     {
-      "id": "highway-shield-motorway",
+      "id": "highway-shield-motorway-trunk",
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "transportation_name",
@@ -347,7 +347,7 @@
             ]
           ]
         },
-        "icon-image": "road_motorway",
+        "icon-image": "road_{class}",
         "text-field": "{ref}",
         "visibility": "visible",
         "icon-anchor": "center",
@@ -391,9 +391,10 @@
           "LineString"
         ],
         [
-          "==",
+          "in",
           "class",
-          "motorway"
+          "motorway",
+          "trunk"
         ],
         [
           "has",
