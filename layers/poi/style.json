@@ -5,7 +5,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 17,
+      "minzoom": 14,
       "layout": {
         "text-font": [
           "Noto Sans Bold"
@@ -22,8 +22,9 @@
             ]
           ]
         },
-        "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "icon-image": ["step",["zoom"],"purple_dot",17,["get","subclass"]],
+        "icon-size": ["step",["zoom"],0.6,15,0.7,16,1],
+        "text-field": ["step",["zoom"],"",17,["concat",["get","name:latin"],"\n",["get","name:nonlatin"]]],
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -82,7 +83,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 15,
+      "minzoom": 14,
       "layout": {
         "text-font": [
           "Noto Sans Bold"
@@ -99,8 +100,9 @@
             ]
           ]
         },
-        "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "icon-image": ["step",["zoom"],"purple_dot",15,["get","subclass"]],
+        "icon-size": ["step",["zoom"],0.7,16,1],
+        "text-field": ["step",["zoom"],"",16,["concat",["get","name:latin"],"\n",["get","name:nonlatin"]]],
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -611,7 +613,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 16,
+      "minzoom": 14,
       "layout": {
         "text-font": [
           "Noto Sans Bold"
@@ -628,8 +630,9 @@
             ]
           ]
         },
-        "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "icon-image": ["step",["zoom"],"orange_dot",16,["get","subclass"]],
+        "icon-size": ["step",["zoom"],0.6,15,0.7,16,1],
+        "text-field": ["step",["zoom"],"",16,["concat",["get","name:latin"],"\n",["get","name:nonlatin"]]],
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
