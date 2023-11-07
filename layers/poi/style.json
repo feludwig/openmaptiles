@@ -1296,7 +1296,7 @@
       "type": "symbol",
       "source": "openmaptiles",
       "source-layer": "poi",
-      "minzoom": 17,
+      "minzoom": 15,
       "layout": {
         "icon-size": 1,
         "text-font": [
@@ -1314,8 +1314,8 @@
             ]
           ]
         },
-        "icon-image": "bus_stop.12",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "icon-image": ["step",["zoom"],"bus_stop_square",17,"bus_stop.12"],
+        "text-field": ["step",["zoom"],"",17,["concat",["get","name:latin"],"\n",["get","name:nonlatin"]]],
         "visibility": "visible",
         "icon-anchor": "bottom",
         "text-anchor": "top",
