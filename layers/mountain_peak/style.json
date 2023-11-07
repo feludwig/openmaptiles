@@ -9,18 +9,15 @@
       "layout": {
         "text-size": 10,
         "icon-image": "peak",
-        "text-field": {
-          "stops": [
-            [
-              6,
-              " "
-            ],
-            [
-              12,
-              "{name} {ele}m"
-            ]
-          ]
-        },
+        "text-field": [
+          "step",["zoom"],
+            " ",
+            12,
+            ["case",
+            ["has","ele"],
+            ["concat",["get","name"]," ",["get","ele"],"m"],
+            ["get","name"]]
+        ],
         "text-anchor": "top",
         "text-offset": [
           0,
